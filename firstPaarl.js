@@ -1,9 +1,11 @@
 var assert = require('assert')
-var firstPaarl = function(regList){
-  var list = regList.split(',');
+var firstPaarl = function(regNum){
+var list = regNum.split(',');
   for(var i=0; i<list.length; i++){
-    return list[i];
+if(list[i].startsWith("CJ")){
+return list[i];
+   }
   }
-};
-console.log(firstPaarl('CJ 123456,CA 456987,CY 789654'));
-assert.equal(firstPaarl('CJ 123456,CA 456987, CY 789654'),'CJ 123456');
+}
+console.log(firstPaarl('CA 456987,CJ 123456,CJ 789654'));
+assert.equal(firstPaarl('CJ 123456,CA 456987, CJ 456321'),'CJ 123456');
