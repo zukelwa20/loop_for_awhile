@@ -5,4 +5,4 @@ console.log(list[i]);
 
 }
 }
-displayEachRegNumber('CJ 12345,CA 456987,CY 789654');
+var results = displayEachRegNumber('CJ 12345,CA 456987,CY 789654');
