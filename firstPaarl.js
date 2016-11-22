@@ -7,5 +7,5 @@ return list[i];
    }
   }
 }
-console.log(firstPaarl('CA 456987,CJ 123456,CJ 789654'));
+console.log(firstPaarl('CJ 456987,CY 123456, CA 789654'));
 assert.equal(firstPaarl('CJ 123456,CA 456987, CJ 456321'),'CJ 123456');
