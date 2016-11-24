@@ -1,6 +1,6 @@
 var assert = require('assert')
-var totalPhoneBill = function(phone) {
-  var billList = phone.split(',');
+var totalPhoneBill = function(phoneBill) {
+  var billList = phoneBill.split(',');
   var total = 0;
   for (var i = 0; i < billList.length; i++) {
     if (billList[i] === 'call') {
