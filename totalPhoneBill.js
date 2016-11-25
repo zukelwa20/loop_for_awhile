@@ -1,4 +1,4 @@
-var assert = require('assert')
+//var assert = require('assert')
 var totalPhoneBill = function(phoneBill) {
   var billList = phoneBill.split(',');
   var total = 0;
@@ -13,4 +13,4 @@ var totalPhoneBill = function(phoneBill) {
 }
 
 console.log(totalPhoneBill('call,sms,call,sms,sms'));
-assert.equal(totalPhoneBill('call,sms,call,sms,sms'), '7.45');
+//assert.equal(totalPhoneBill('call,sms,call,sms,sms'), '7.45');
